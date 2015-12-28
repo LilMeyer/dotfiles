@@ -1,0 +1,7 @@
+Dotfiles
+========
+
+Prerequisites
+-------------
+ * scons
+
