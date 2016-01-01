@@ -20,4 +20,4 @@ alias s='subl .'
 alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gp='git push'
 alias gf='git fetch'
-
+alias gc-latest-tag='git checkout $(git describe --tags `git rev-list --tags --max-count=1`)'
