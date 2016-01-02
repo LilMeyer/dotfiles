@@ -74,11 +74,14 @@ if ! shopt -oq posix; then
 fi
 
 
-# Tex paths
+# PATHS
+# Tex
 INFOPATH="$INFOPATH:/usr/local/texlive/2015/texmf-dist/doc/info"
 MANPATH="$MANPATH:/usr/local/texlive/2015/texmf-dist/doc/man"
 PATH="$PATH:/usr/local/texlive/2015/bin/x86_64-linux"
 
+# Libs
+PATH="$PATH:/usr/local/lib"
 
 # Gitprompt configuration
 
