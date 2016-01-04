@@ -21,3 +21,12 @@ alias gl="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %
 alias gp='git push'
 alias gf='git fetch'
 alias gc-latest-tag='git checkout $(git describe --tags `git rev-list --tags --max-count=1`)'
+
+# Sound
+alias sound-up="pactl set-sink-volume 0 -- +10%"
+alias sound-down="pactl set-sink-volume 0 -- -10%"
+alias sound-up2="amixer -D pulse sset Master 5%+"
+alias sound-down2="amixer -D pulse sset Master 5%-"
+
+# Cisco
+alias cisco="( /opt/cisco/anyconnect/bin/vpnui &)"
