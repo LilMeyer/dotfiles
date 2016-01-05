@@ -30,3 +30,6 @@ alias sound-down2="amixer -D pulse sset Master 5%-"
 
 # Cisco
 alias cisco="( /opt/cisco/anyconnect/bin/vpnui &)"
+
+# Explorer
+alias e="(thunar &)"
