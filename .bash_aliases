@@ -33,3 +33,6 @@ alias cisco="( /opt/cisco/anyconnect/bin/vpnui &)"
 
 # Explorer
 alias e="(thunar &)"
+
+# Sleep
+alias sleep="sudo pm-suspend"
