@@ -36,3 +36,7 @@ alias e="(thunar &)"
 
 # Sleep
 alias sleep="sudo pm-suspend"
+
+# Netstat, find out which process is listening upon a port
+# See http://www.cyberciti.biz/faq/what-process-has-open-linux-port/
+alias netstat-who="netstat -tulpn"
