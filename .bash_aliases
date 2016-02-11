@@ -39,4 +39,5 @@ alias sleep="sudo pm-suspend"
 
 # Netstat, find out which process is listening upon a port
 # See http://www.cyberciti.biz/faq/what-process-has-open-linux-port/
-alias netstat-who="netstat -tlp | awk '{print $4"\t" $7}' | column -t"
+# Replace ' by '\'' for escaping
+alias netstat-who='netstat -tlp | awk '\''{print $4"\t" $7}'\'' | column -t'
