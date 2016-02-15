@@ -41,3 +41,6 @@ alias sleep="sudo pm-suspend"
 # See http://www.cyberciti.biz/faq/what-process-has-open-linux-port/
 # Replace ' by '\'' for escaping
 alias netstat-who='netstat -tlp | awk '\''{print $4"\t" $7}'\'' | column -t'
+
+# Get public ip address
+alias get-ip='wget http://ipinfo.io/ip -qO -'
