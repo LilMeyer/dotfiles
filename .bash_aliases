@@ -8,6 +8,9 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
 
+alias cat-last='cat `find . -maxdepth 1 -type f -printf "%T@;%Tc;%p\n" | sort -n | cut -d";" -f3 | tail -n 1`'
+alias tail-last='tail `find . -maxdepth 1 -type f -printf "%T@;%Tc;%p\n" | sort -n | cut -d";" -f3 | tail -n 1`'
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
